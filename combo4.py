@@ -463,7 +463,6 @@ def delete_file(file_path):
         log_error("can only delete text files")
 
 def process_file(image_path):
-    #image_path = 'C:\\Users\\Simon\\Downloads\\w6bgPUV.png'
     reprocess = True
     try:
         log_error("Processing " + image_path)
@@ -564,10 +563,9 @@ def process_images_in_directory(directory):
 def execute_script(directory=None):
     if directory is None:
         if os.name == 'nt':  # Windows
-            #directory = r'X:\\Stable\\dif\\stable-diffusion-webui-docker\\output'
-            directory = r'Z:\\Pron\\Pics\\Sets\\M_Q^uis\\New folder (12)'
+            directory = r'Z:\\'
         else:  # Linux or macOS
-            directory = '/srv/dev-disk-by-uuid-e83913b3-e590-4dc8-9b63-ce0bdbe56ee9/Stable/dif/stable-diffusion-webui-docker/output'
+            directory = '/srv/t'
 
 
     # Change the current working directory to the specified directory
